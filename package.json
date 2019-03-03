@@ -2,7 +2,6 @@
   "name": "recipe-search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tomislav-vukusic.from.hr/React/",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "react": "^16.4.1",
