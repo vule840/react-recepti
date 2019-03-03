@@ -12,11 +12,13 @@ const Recipes  = props => (
 		       				<div className="recipes__box">
 			       				<img className="img-fluid recipes__box-img" src={recipe.image_url} alt={recipe.title}/>
 			       				<div className="recipe__text">
-			       				 
-			       					<h5 className="recipes__title">{recipe.title.length < 20 ? `${recipe.title}` : `${recipe.title.substring(0,25)}...`}</h5>
+			       				 {/*Ovjde se trimao naslov, terarni operatori i na kraju točice ako ima 25 karaktera*/}
+			       					<h5 className="recipes__title">	      
+			       					{ recipe.title.length < 20 ? `${recipe.title}` : `${recipe.title.substring(0, 25)}...` }
+			       					</h5>
 			       					<p className="recipes__subtitle">Publisher: <span>{recipe.publisher}</span></p>
 			       					<button className="recipe_buttons">
-			       					
+			       					 {/*Dvostruki ep zagrada da možemo pisati template tagove*/}
 			       						<Link to={{ pathname: `/recipe/${recipe.recipe_id}`,
 			       									state: {recipe: recipe.title}
 			       					}}>
