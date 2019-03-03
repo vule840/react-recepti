@@ -23,7 +23,7 @@ class App extends Component {
 		})
 		console.log(this.state.recipes);
 	}
-	componentDidMount = () =>{
+/*	componentDidMount = () =>{
 		const json = localStorage.getItem("recipes")
 		const recipes = JSON.parse(json)
 		//pošto je es6, možeš ako je string isti kao ovdje recipe: recipes ostaviti samo string
@@ -34,7 +34,7 @@ class App extends Component {
 		const recipes = JSON.stringify(this.state.recipes)
 		localStorage.setItem("recipes", recipes)
 		//console.log(recipes)
-	}
+	}*/
 	test(){ 
 		console.log('test')
 
