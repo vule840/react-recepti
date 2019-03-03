@@ -6,7 +6,7 @@ import Recipe from "./Recipe"
 import Test from "./Test"
 
 const Router = () => (
-		<BrowserRouter basename="/React">
+		<BrowserRouter>
 			<Switch>
 				<Route path="/" component={App} exact></Route>
 				<Route path="/recipe/:id" component={Recipe}></Route>		

@@ -9,7 +9,7 @@ class Recipe extends React.Component{
 	}
 	componentDidMount = async () => {
 
-		//Ovo dobivamo jer smo stavili Link to u Recipes state: {recipe: recipe.title}
+		//Ovo dobivamo jer smo stavili Link to u Recipes state: s{recipe: recipe.title}
 		const title = this.props.location.state.recipe
 		//e.preventDefault();
 		const req = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${API_KEY}&q=${title}`);
